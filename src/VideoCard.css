@@ -15,3 +15,11 @@
 .videoCard:hover {
   transform: scale(1.09);
 }
+
+.videoCard__stats {
+  display: none;
+}
+
+.videoCard:hover > .videoCard__stats {
+  display: inline;
+}
