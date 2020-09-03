@@ -9,7 +9,6 @@ function Results() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      console.log('calling the fetchdata');
       const request = await axios.get(requests.fetchActionMovies);
       setMovies(request.data.results);
     }
@@ -18,8 +17,8 @@ function Results() {
   }, []);
   return (
     <div className="results">
-      {movies.map((movie) => (
-        <VideoCard />
+      {movies.map((movie, index) => (
+        <VideoCard key={index} movie={movie} />
       ))}
     </div>
   );
