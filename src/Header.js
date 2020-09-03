@@ -4,6 +4,8 @@ import HomeIcon from '@material-ui/icons/Home';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
 import LiveTvIcon from '@material-ui/icons/LiveTv';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import SearchIcon from '@material-ui/icons/Search';
+import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import huluLogo from './hulu-logo.png';
 
 function Header() {
