@@ -8,9 +8,9 @@ function VideoCard({ movie }) {
     <div className="videoCard">
       <img
         src={`${baseURL}${movie.backdrop_path || movie.poster_path}`}
-        alt=""
+        alt="Move poster"
       />
-      <p>This is a film about coding</p>
+      <p>{movie.overview}</p>
       <h2>Movie Title</h2>
       <p>Number of likes...</p>
     </div>
