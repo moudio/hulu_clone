@@ -21,7 +21,7 @@ function VideoCard({ movie }) {
       <h2>{movie.title || movie.original_name}</h2>
       <p className="videoCard__stats">
         {' '}
-        {movie.media_type && `${movie.media_type}  •`}
+        {movie.media_type && `${movie.media_type}  • `}{' '}
         {movie.release_date || movie.first_air_date} •
         <ThumbUpSharp />
         {movie.vote_count}
