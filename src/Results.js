@@ -15,6 +15,7 @@ function Results({ selectedOption }) {
 
     fetchData();
   }, []);
+  console.log(movies);
   return (
     <div className="results">
       {movies.map((movie, index) => (
