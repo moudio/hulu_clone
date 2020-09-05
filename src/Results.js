@@ -9,13 +9,16 @@ function Results({ selectedOption }) {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.selectedOption);
-      setMovies(request.data.results);
+      // `https://api.themoviedb.org/3/trending/all/week?api_key=bc57add8b6a50a888a24574a5b0fb40e&language=en-US`
+      const { data } = await axios.get(requests.fetchTrending);
+      setMovies(data.results);
+
+      // setMovies(request.data.results);
     }
 
     fetchData();
   }, []);
-  console.log(movies);
+
   return (
     <div className="results">
       {movies.map((movie, index) => (
