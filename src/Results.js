@@ -18,8 +18,8 @@ function Results({ selectedOption }) {
 
   return (
     <div className="results">
-      {movies.map((movie, index) => (
-        <VideoCard key={index} movie={movie} />
+      {movies.map((movie) => (
+        <VideoCard key={movie.id} movie={movie} />
       ))}
     </div>
   );
