@@ -15,7 +15,6 @@ function VideoCard({ movie }) {
         line={1}
         element="p"
         truncateText="..."
-        textTruncateChild={<a href="#">Read On...</a>}
         text={movie.overview}
       />
       <h2>{movie.title || movie.original_name}</h2>

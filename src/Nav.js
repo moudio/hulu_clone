@@ -1,11 +1,16 @@
 import React from 'react';
 import './Nav.css';
+import requests from './requests';
 
-function Nav() {
+function Nav({ setSelectedOption }) {
   return (
     <div className="nav">
-      <h2>Trending</h2>
-      <h2>Top Rated</h2>
+      <h2 onClick={() => setSelectedOption(requests.fetchTrending)}>
+        Trending
+      </h2>
+      <h2 onClick={() => setSelectedOption(requests.fetchTopRated)}>
+        Top Rated
+      </h2>
       <h2>Action</h2>
       <h2>Comedy</h2>
       <h2>Horror</h2>
