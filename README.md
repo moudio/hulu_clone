@@ -1,5 +1,5 @@
 # Building a Hulu Clone with React
-![screenshot](./src/hulu_clone.png)
+![screenshot](./src/hulu_clone.jpg)
 
 
 ## Technologies
