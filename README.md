@@ -44,9 +44,8 @@ You can also check <a href="https://mouhadiouf.com/" target="_blank"> my portfol
 
 ## Potential Future Improvements 
 
-- Show real time results without update
-- Create a dark mode to allow the user to switch themes. 
-
+- Add user login/logout feature
+- Enable possibility to watch trailers
 
 ## Contributing
 
